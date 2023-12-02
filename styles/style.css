@@ -68,6 +68,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   padding-bottom: 16px;
@@ -175,10 +176,15 @@ ol {
 }
 
 .content__list {
+  position: relative;
   height: 298px;
   width: 399px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
 }
 
 .content__list-item:not(:last-child) {
