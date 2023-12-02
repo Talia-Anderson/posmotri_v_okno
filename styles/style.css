@@ -45,7 +45,7 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
 .content {
   margin-top: 133px;
@@ -78,7 +78,6 @@ ol {
   height: 100%;
   object-fit: fill;
   overflow: hidden;
-
 }
 
 .search-form {
@@ -90,7 +89,6 @@ ol {
 
 .search-form__fieldset {
   border: none;
-
 }
 
 .search-form__fieldset-title {
@@ -117,7 +115,7 @@ ol {
   border-left: 0;
   border-right: 0;
   width: 225px;
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
 
   font-family: Fira Sans Condensed;
   font-size: 18px;
@@ -134,7 +132,7 @@ ol {
 
 .title {
   padding-bottom: 26px;
-  color: #FFF;
+  color: #fff;
   font-family: Oswald;
   font-size: 75px;
   font-style: normal;
@@ -148,8 +146,14 @@ ol {
 }
 
 .content__card-link {
-  color: #FFF;
+  display: block;
+  color: #fff;
   text-decoration: none;
+  margin: 2px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card-title {
@@ -173,18 +177,18 @@ ol {
 .content__list {
   height: 298px;
   width: 399px;
-  overflow-y:scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.content__list-item:not(:last-child){
+.content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .content__video-card {
   display: flex;
   justify-content: space-between;
-  max-height: 103px
+  max-height: 103px;
 }
 
 .content__video-card-thumbnail {
@@ -246,25 +250,6 @@ input[type="checkbox"]:checked + span {
   margin: 5px 0px 5px 5px;
 }
 
-/* input[type="checkbox"]:focus-visible + span {
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  display: block;
-  background-color: salmon;
-  position: absolute;
-  outline-offset: -4px;
-  content: "";
-} */
-
-/* input[type="checkbox"] + span {
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  border: 1px solid white;
-  margin: 5px 0px 5px 5px;
-} */
-
 .search-form__pseudo-checkbox {
   cursor: pointer;
   display: inline-block;
@@ -278,22 +263,22 @@ input[type="checkbox"]:checked + span {
 }
 
 .search-form__label:hover {
-  color: #FFF;
+  color: #fff;
   text-decoration: underline;
 }
 
 .content__card-link:hover {
-  color: #FFF;
+  color: #fff;
   text-decoration: underline;
 }
 
 .search-form__submit-button:hover {
-  color: #FFF;
+  color: #fff;
   text-decoration: underline;
 }
 
 .more-button:hover {
-  color: #FFF;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -305,9 +290,21 @@ input[type="checkbox"]:checked + span {
   background-color: #545050;
 }
 
-.search-form__label:active  {
+.search-form__label:active {
   border: none;
   outline: 1px solid white;
-  outline-offset: 0
+  outline-offset: 0;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:focus {
+  border: 0;
+  outline: 0;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid white;
+}
