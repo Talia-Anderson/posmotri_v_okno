@@ -54,14 +54,17 @@ ol {
   margin-right: auto;
   max-width: 1140px;
   max-height: 534px;
+
   display: grid;
   grid-auto-flow: column;
   gap: 30px;
-
 }
 
 .result {
   max-width: 711px;
+  height: 534px;
+  padding-top: 78px;
+  padding-bottom: -5px;
 }
 
 .result__video-container {
@@ -84,12 +87,38 @@ ol {
   align-items: flex-end;
 }
 
+.search-form__fieldset {
+  border: none;
+
+}
+
 .search-form__fieldset-title {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding-bottom: 5px;
+}
+
+.search-form__label-text {
+  appearance: none;
+}
+
+.search-form__textfield {
+  cursor: pointer;
+  background-color: transparent;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 0;
+  border-right: 0;
+  width: 225px;
+  color: rgba(255, 255, 255, 0.70);
+
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .content__details {
@@ -99,7 +128,6 @@ ol {
 }
 
 .title {
-  padding-top: 30px;
   padding-bottom: 26px;
   color: #FFF;
   font-family: Oswald;
@@ -120,12 +148,12 @@ ol {
 }
 
 .content__video-card-title {
-font-family: Oswald;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 100%; /* 30px */
-text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
 }
 
 .content__video-card-description {
@@ -133,7 +161,7 @@ text-transform: uppercase;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px; /* 90% */
+  line-height: 16.2px;
 }
 
 .content__list {
@@ -143,21 +171,14 @@ text-transform: uppercase;
   overflow-x: hidden;
 }
 
-.content__list-item {
-  
+.content__list-item:not(:last-child){
   margin-bottom: 30px;
-  
-}
-
-.content__list-item:last-child {
-  margin-bottom: 0;
 }
 
 .content__video-card {
   display: flex;
   justify-content: space-between;
   max-height: 103px
-  
 }
 
 .content__video-card-thumbnail {
@@ -168,4 +189,51 @@ text-transform: uppercase;
 .content__video-card-description-container {
   height: 100%;
   width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid white;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
+
+.search-form__label {
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.search-form__checkbox-list {
+  display: inline;
+}
+
+input[type="checkbox"] + span {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid white;
+  margin: 5px 0px 5px 5px;
+}
+
+.search-form__pseudo-checkbox {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.more-button {
+  width: 399px;
+  height: 34px;
+  bottom: 0;
 }
