@@ -66,7 +66,7 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -79,14 +79,16 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 40px;
 }
 
 .search-form__fieldset {
   border: none;
+
 }
 
 .search-form__fieldset-title {
-  padding-bottom: 5px;
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -121,13 +123,12 @@ ol {
 }
 
 .content__details {
-  min-height: 534px;
+  font-family: "Oswald", sans-serif;
 }
 
 .title {
-  padding-bottom: 26px;
+  margin-bottom: 20px;
   color: #fff; 
-  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -151,9 +152,8 @@ ol {
 }
 
 .content__video-card-title {
-  max-width: 200px;
+  
   margin-bottom: 6px;
-  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
@@ -170,14 +170,14 @@ ol {
   font-size: 18px;
   font-style: normal;
   line-height: 16.2px;
-  max-width: 200px;
+
 }
 
 .content__list {
   position: relative;
   width: 399px;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list-item:not(:last-child) {
@@ -188,18 +188,18 @@ ol {
   display: flex;
   justify-content: space-between;
   min-height: 103px;
-  /* min-width: 399px; */
 }
 
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .content__video-card-description-container {
   width: 100%;
   height: 100%;
+  max-width: 170px;
 }
 
 .button {
@@ -231,12 +231,13 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
+  column-gap: 15px;
 }
 
 input[type="checkbox"] + span {
-  width: 18px;
-  height: 18px;
-  margin: 5px;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
   border: 1px solid white;
   background-color: transparent;
 }
@@ -246,10 +247,8 @@ input[type="checkbox"] + span {
 }
 
 input[type="checkbox"]:checked + span {
-  width: 18px;
-  height: 18px;
-  outline: 2px solid #1b1919;
-  outline-offset: -4px;
+  outline: 1px solid #1b1919;
+  outline-offset: -2px;
   background-color: white;
 }
 
@@ -258,11 +257,11 @@ input[type="checkbox"]:checked + span {
 }
 
 .more-button {
-  width: 399px;
+  width: 100%;
   height: 34px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
 }
 
